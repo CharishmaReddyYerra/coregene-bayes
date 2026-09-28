@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this research prototype, cite the software and the source datasets listed in the data-provenance document."
+title: "CoreGene-Bayes"
+type: software
+version: 0.1.0
+date-released: 2026-09-25
+license: MIT
+authors:
+  - name: "CoreGene-Bayes contributors"
+

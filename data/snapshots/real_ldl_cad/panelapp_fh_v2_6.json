@@ -1,0 +1,371 @@
+{
+  "disease_group": "Lipids",
+  "disease_sub_group": "",
+  "genes": [
+    {
+      "confidence_level": "3",
+      "entity_name": "APOB",
+      "entity_type": "gene",
+      "evidence": [
+        "Emory Genetics Laboratory",
+        "Illumina TruGenome Clinical Sequencing Services",
+        "Expert Review Green",
+        "UKGTN",
+        "Radboud University Medical Center, Nijmegen"
+      ],
+      "gene_data": {
+        "alias": [],
+        "alias_name": null,
+        "biotype": "protein_coding",
+        "ensembl_genes": {
+          "GRch37": {
+            "82": {
+              "ensembl_id": "ENSG00000084674",
+              "location": "2:21224301-21266945"
+            }
+          },
+          "GRch38": {
+            "90": {
+              "ensembl_id": "ENSG00000084674",
+              "location": "2:21001429-21044073"
+            }
+          }
+        },
+        "gene_name": "apolipoprotein B",
+        "gene_symbol": "APOB",
+        "hgnc_date_symbol_changed": "2001-06-22",
+        "hgnc_id": "HGNC:603",
+        "hgnc_release": "2017-11-03",
+        "hgnc_symbol": "APOB",
+        "omim_gene": [
+          "107730"
+        ]
+      },
+      "mode_of_inheritance": "MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",
+      "mode_of_pathogenicity": "Loss-of-function variants (as defined in pop up message) DO NOT cause this phenotype - please provide details in the comments",
+      "penetrance": null,
+      "phenotypes": [
+        "Hypercholesterolemia, familial, 2, OMIM:144010"
+      ],
+      "publications": [
+        "8141833",
+        "25414277",
+        "23433573"
+      ],
+      "tags": [],
+      "transcript": null
+    },
+    {
+      "confidence_level": "3",
+      "entity_name": "APOE",
+      "entity_type": "gene",
+      "evidence": [
+        "NHS GMS",
+        "Expert Review Green",
+        "Emory Genetics Laboratory",
+        "Radboud University Medical Center, Nijmegen",
+        "Expert Review Green"
+      ],
+      "gene_data": {
+        "alias": [],
+        "alias_name": null,
+        "biotype": "protein_coding",
+        "ensembl_genes": {
+          "GRch37": {
+            "82": {
+              "ensembl_id": "ENSG00000130203",
+              "location": "19:45409011-45412650"
+            }
+          },
+          "GRch38": {
+            "90": {
+              "ensembl_id": "ENSG00000130203",
+              "location": "19:44905754-44909393"
+            }
+          }
+        },
+        "gene_name": "apolipoprotein E",
+        "gene_symbol": "APOE",
+        "hgnc_date_symbol_changed": "2001-06-22",
+        "hgnc_id": "HGNC:613",
+        "hgnc_release": "2017-11-03",
+        "hgnc_symbol": "APOE",
+        "omim_gene": [
+          "107741"
+        ]
+      },
+      "mode_of_inheritance": "BOTH monoallelic and biallelic, autosomal or pseudoautosomal",
+      "mode_of_pathogenicity": "",
+      "penetrance": null,
+      "phenotypes": [
+        "Hyperlipoproteinemia, type III, OMIM:617347"
+      ],
+      "publications": [
+        "11095479",
+        "23433584",
+        "24267230",
+        "26802169",
+        "16094309",
+        "22481068",
+        "22949395",
+        "34058468"
+      ],
+      "tags": [],
+      "transcript": null
+    },
+    {
+      "confidence_level": "3",
+      "entity_name": "LDLR",
+      "entity_type": "gene",
+      "evidence": [
+        "Emory Genetics Laboratory",
+        "Illumina TruGenome Clinical Sequencing Services",
+        "Expert Review Green",
+        "UKGTN",
+        "Radboud University Medical Center, Nijmegen"
+      ],
+      "gene_data": {
+        "alias": [
+          "LDLCQ2"
+        ],
+        "alias_name": [
+          "familial hypercholesterolemia"
+        ],
+        "biotype": "protein_coding",
+        "ensembl_genes": {
+          "GRch37": {
+            "82": {
+              "ensembl_id": "ENSG00000130164",
+              "location": "19:11200038-11244492"
+            }
+          },
+          "GRch38": {
+            "90": {
+              "ensembl_id": "ENSG00000130164",
+              "location": "19:11089362-11133816"
+            }
+          }
+        },
+        "gene_name": "low density lipoprotein receptor",
+        "gene_symbol": "LDLR",
+        "hgnc_date_symbol_changed": "1986-01-01",
+        "hgnc_id": "HGNC:6547",
+        "hgnc_release": "2017-11-03",
+        "hgnc_symbol": "LDLR",
+        "omim_gene": [
+          "606945"
+        ]
+      },
+      "mode_of_inheritance": "MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",
+      "mode_of_pathogenicity": "",
+      "penetrance": null,
+      "phenotypes": [
+        "Hypercholesterolemia, familial, 1, OMIM:143890"
+      ],
+      "publications": [
+        "17142622",
+        "25414277",
+        "23433573"
+      ],
+      "tags": [],
+      "transcript": null
+    },
+    {
+      "confidence_level": "3",
+      "entity_name": "LDLRAP1",
+      "entity_type": "gene",
+      "evidence": [
+        "Emory Genetics Laboratory",
+        "Illumina TruGenome Clinical Sequencing Services",
+        "Expert Review Green",
+        "UKGTN",
+        "Radboud University Medical Center, Nijmegen"
+      ],
+      "gene_data": {
+        "alias": [
+          "ARH",
+          "ARH2",
+          "FHCB1",
+          "FHCB2",
+          "MGC34705",
+          "DKFZp586D0624"
+        ],
+        "alias_name": null,
+        "biotype": "protein_coding",
+        "ensembl_genes": {
+          "GRch37": {
+            "82": {
+              "ensembl_id": "ENSG00000157978",
+              "location": "1:25870071-25895377"
+            }
+          },
+          "GRch38": {
+            "90": {
+              "ensembl_id": "ENSG00000157978",
+              "location": "1:25543580-25568886"
+            }
+          }
+        },
+        "gene_name": "low density lipoprotein receptor adaptor protein 1",
+        "gene_symbol": "LDLRAP1",
+        "hgnc_date_symbol_changed": "2005-02-24",
+        "hgnc_id": "HGNC:18640",
+        "hgnc_release": "2017-11-03",
+        "hgnc_symbol": "LDLRAP1",
+        "omim_gene": [
+          "605747"
+        ]
+      },
+      "mode_of_inheritance": "BIALLELIC, autosomal or pseudoautosomal",
+      "mode_of_pathogenicity": "",
+      "penetrance": null,
+      "phenotypes": [
+        "Hypercholesterolemia, familial, 4, OMIM:603813"
+      ],
+      "publications": [
+        "12417523"
+      ],
+      "tags": [],
+      "transcript": null
+    },
+    {
+      "confidence_level": "3",
+      "entity_name": "PCSK9",
+      "entity_type": "gene",
+      "evidence": [
+        "Emory Genetics Laboratory",
+        "Illumina TruGenome Clinical Sequencing Services",
+        "Expert Review Green",
+        "UKGTN",
+        "Radboud University Medical Center, Nijmegen"
+      ],
+      "gene_data": {
+        "alias": [
+          "NARC-1",
+          "FH3"
+        ],
+        "alias_name": null,
+        "biotype": "protein_coding",
+        "ensembl_genes": {
+          "GRch37": {
+            "82": {
+              "ensembl_id": "ENSG00000169174",
+              "location": "1:55505221-55530525"
+            }
+          },
+          "GRch38": {
+            "90": {
+              "ensembl_id": "ENSG00000169174",
+              "location": "1:55039548-55064852"
+            }
+          }
+        },
+        "gene_name": "proprotein convertase subtilisin/kexin type 9",
+        "gene_symbol": "PCSK9",
+        "hgnc_date_symbol_changed": "2003-05-13",
+        "hgnc_id": "HGNC:20001",
+        "hgnc_release": "2017-11-03",
+        "hgnc_symbol": "PCSK9",
+        "omim_gene": [
+          "607786"
+        ]
+      },
+      "mode_of_inheritance": "MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",
+      "mode_of_pathogenicity": "Loss-of-function variants (as defined in pop up message) DO NOT cause this phenotype - please provide details in the comments",
+      "penetrance": null,
+      "phenotypes": [
+        "Hypercholesterolemia, familial, 3, OMIM:603776"
+      ],
+      "publications": [
+        "16224054",
+        "23433573"
+      ],
+      "tags": [],
+      "transcript": null
+    },
+    {
+      "confidence_level": "1",
+      "entity_name": "GCKR",
+      "entity_type": "gene",
+      "evidence": [
+        "Other"
+      ],
+      "gene_data": {
+        "alias": [],
+        "alias_name": [
+          "hexokinase 4 regulator"
+        ],
+        "biotype": "protein_coding",
+        "ensembl_genes": {
+          "GRch37": {
+            "82": {
+              "ensembl_id": "ENSG00000084734",
+              "location": "2:27719709-27746554"
+            }
+          },
+          "GRch38": {
+            "90": {
+              "ensembl_id": "ENSG00000084734",
+              "location": "2:27496842-27523684"
+            }
+          }
+        },
+        "gene_name": "glucokinase regulator",
+        "gene_symbol": "GCKR",
+        "hgnc_date_symbol_changed": "1993-08-24",
+        "hgnc_id": "HGNC:4196",
+        "hgnc_release": "2017-11-03",
+        "hgnc_symbol": "GCKR",
+        "omim_gene": [
+          "600842"
+        ]
+      },
+      "mode_of_inheritance": "MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",
+      "mode_of_pathogenicity": null,
+      "penetrance": null,
+      "phenotypes": [
+        "familial hypercholesterolemia MONDO:0005439"
+      ],
+      "publications": [],
+      "tags": [],
+      "transcript": []
+    }
+  ],
+  "hash_id": null,
+  "id": 772,
+  "name": "Familial hypercholesterolaemia (GMS)",
+  "regions": [],
+  "relevant_disorders": [
+    "Familial hypercholesterolaemia - targeted panel",
+    "R134",
+    "GT745",
+    "TP442"
+  ],
+  "signed_off": "2026-08-12",
+  "stats": {
+    "number_of_genes": 6,
+    "number_of_regions": 0,
+    "number_of_strs": 0
+  },
+  "status": "public",
+  "strs": [],
+  "types": [
+    {
+      "description": "This is a panel for the Genomic Medicine Service for an exome/genome/panel based test that requires a virtual gene panel for rare disease in the Test Directory.",
+      "name": "GMS Rare Disease Virtual",
+      "slug": "gms-rare-disease-virtual"
+    },
+    {
+      "description": "This panel type is used for GMS panels that are not virtual (i.e. could be a wet lab test)",
+      "name": "GMS Rare Disease",
+      "slug": "gms-rare-disease"
+    },
+    {
+      "description": "This panel has undergone review by a NHSE GMS disease specialist group and processes to be signed-off for use within the GMS.",
+      "name": "GMS signed-off",
+      "slug": "gms-signed-off"
+    }
+  ],
+  "version": "2.6",
+  "version_created": "2026-06-24T13:21:42.063914Z"
+}

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "coregene-bayes"
+version = "0.1.0"
+description = "Probabilistic core-gene evidence from real molecular-QTL, GWAS, and directed influence data"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "CoreGene-Bayes contributors" }]
+dependencies = [
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+  "scipy>=1.14,<2",
+]
+
+[project.optional-dependencies]
+download = ["pysam>=0.23,<0.24"]
+dev = [
+  "build>=1.2,<2",
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+]
+
+[project.scripts]
+coregene-bayes = "coregene_bayes.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/coregene_bayes"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+

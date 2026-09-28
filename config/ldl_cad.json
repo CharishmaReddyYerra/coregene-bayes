@@ -1,0 +1,28 @@
+{
+  "project": "CoreGene-Bayes LDL-to-CAD real-data demonstration",
+  "candidate_trait": "Low-density lipoprotein cholesterol",
+  "candidate_study_id": "GCST90019512",
+  "disease": "Coronary artery disease",
+  "disease_study_id": "GCST90132314",
+  "genome_build": "GRCh38",
+  "primary_network_tissue": "whole blood",
+  "locus_validation_tissue": "liver",
+  "ancestry": "predominantly European",
+  "open_targets_release": "26.09",
+  "open_targets_endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+  "l2g_candidate_threshold": 0.4,
+  "candidate_p_threshold": 5e-8,
+  "minimum_instrument_f": 10.0,
+  "disease_prior_inclusion": 0.1,
+  "disease_slab_sd": 0.2,
+  "edge_prior_inclusion": 0.01,
+  "edge_slab_sd": 0.15,
+  "core_thresholds": [2, 3, 5],
+  "minimum_network_coverage": 0.5,
+  "source_locus_window_bp": 1000000,
+  "random_seed": 20260925,
+  "data_directory": "data/snapshots/real_ldl_cad",
+  "bayesv2g_directory": "../bayesv2g/results/ldl_demo",
+  "results_directory": "results/ldl_cad"
+}
+

@@ -1,0 +1,6 @@
+gene_symbol,gene_id,confidence_level,panel_id,panel_name,panel_version,validation_scope
+APOB,ENSG00000084674,3,772,Familial hypercholesterolaemia (GMS),2.6,"diagnostic familial hypercholesterolaemia proxy, not core-gene truth"
+APOE,ENSG00000130203,3,772,Familial hypercholesterolaemia (GMS),2.6,"diagnostic familial hypercholesterolaemia proxy, not core-gene truth"
+LDLR,ENSG00000130164,3,772,Familial hypercholesterolaemia (GMS),2.6,"diagnostic familial hypercholesterolaemia proxy, not core-gene truth"
+LDLRAP1,ENSG00000157978,3,772,Familial hypercholesterolaemia (GMS),2.6,"diagnostic familial hypercholesterolaemia proxy, not core-gene truth"
+PCSK9,ENSG00000169174,3,772,Familial hypercholesterolaemia (GMS),2.6,"diagnostic familial hypercholesterolaemia proxy, not core-gene truth"

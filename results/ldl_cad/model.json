@@ -1,0 +1,29 @@
+{
+  "conditional_independence_assumptions": [
+    "disease and incoming-edge latent indicators are independent conditional on model parameters",
+    "collapsed physical source loci are treated as Bernoulli-independent"
+  ],
+  "definition": "C_j(m) = D_j * 1(sum_l E_lj >= m)",
+  "disease_prior_inclusion": 0.1,
+  "disease_slab_sd": 0.2,
+  "edge_prior_inclusion": 0.01,
+  "edge_slab_sd": 0.15,
+  "model_type": "spike-and-slab latent ratio-evidence-and-convergence event model",
+  "prior_only_convergence_probability": {
+    "m2": 0.25314764851508187,
+    "m3": 0.07394003418227538,
+    "m5": 0.003010924506458796
+  },
+  "prior_only_core_probability": {
+    "m2": 0.025314764851508187,
+    "m3": 0.007394003418227538,
+    "m5": 0.0003010924506458796
+  },
+  "thresholds": [
+    2,
+    3,
+    5
+  ],
+  "version": "0.1.0",
+  "within_locus_collapse_rule": "maximum edge probability (conservative correlated-evidence rule)"
+}

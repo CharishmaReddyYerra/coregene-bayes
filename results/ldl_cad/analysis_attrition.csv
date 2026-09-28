@@ -1,0 +1,8 @@
+stage,count,note
+prespecified LDL-locus candidate genes,239,Open Targets L2G rule plus verified BayesV2G seeds
+genes with a harmonized CAD Wald ratio,173,separate CAD GWAS; valid allele-frequency scaling required
+genes passing disease instrument/effect QC,173,F >= configured threshold
+candidate network source genes,114,cis instrument present in fixed eQTLGen trans-tested SNP universe
+candidate network target genes,182,complete tested trans coefficient available
+targets meeting network coverage threshold,182,missing pairs were not coded as null edges
+genes eligible for primary core ranking,173,requires disease evidence and sufficient network coverage

@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "candidate_cis_rows_scanned": 111353,
+    "candidate_target_rows_scanned": 1867316,
+    "compact_trans_outcomes": 19781,
+    "disease_instrument_candidate_rows": 3466,
+    "network_source_instruments": 114,
+    "tested_trans_snps": 10317
+  },
+  "inputs": {
+    "candidate_sha256": "c70f24bf4431c5790bfa46ffcbd58eab0880f2d28990846d8a7fdd4772629629",
+    "eqtlgen_cis": {
+      "bytes": 322775879,
+      "sha256": "8d963046d7b74cf3533c3510614cdc724e7ad0e325a3d2f7cca63ad13661b4c4",
+      "url": "https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2019-12-11-cis-eQTLsFDR0.05-ProbeLevel-CohortInfoRemoved-BonferroniAdded.txt.gz"
+    },
+    "eqtlgen_trans": {
+      "bytes": 6090297103,
+      "sha256": "372d3d3cfbfecec0c6c25658154db62338cb8ea6e516bffcf1d5efd179c32d58",
+      "url": "https://molgenis26.gcc.rug.nl/downloads/eqtlgen/trans-eqtl/2018-09-04-trans-eQTLsFDR-CohortInfoRemoved-BonferroniAdded.txt.gz"
+    }
+  }
+}

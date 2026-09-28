@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "cad_instrument_outcomes": 3384,
+    "cad_sort1_region_rows": 6556
+  },
+  "inputs": {
+    "cad_gwas": {
+      "bytes": 1300497824,
+      "sha256": "89c888a717ec01ba47271527adbe6dda1c0ce7e7b88d8c1061121a7ba747954a",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90132001-GCST90133000/GCST90132314/harmonised/GCST90132314.h.tsv.gz"
+    },
+    "cis_instruments_sha256": "4f788a3ec1edc351469ad3f8ed04fbc34852a23751abb6102525f956630a9a4e"
+  }
+}

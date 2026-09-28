@@ -1,0 +1,8 @@
+metric,top_k,value,p_value,positive_in_top_k,validation_positives_in_universe,eligible_gene_count
+panel_green_gene_count,,5.0,,,,
+panel_candidate_overlap_count,,4.0,,,,
+panel_eligible_overlap_count,,1.0,,,,
+proxy_annotation_average_precision,,0.3333333333333333,,,,
+proxy_annotation_top_k_enrichment,10.0,inf,0.057803468208092484,1.0,1.0,173.0
+proxy_annotation_top_k_enrichment,25.0,inf,0.1445086705202312,1.0,1.0,173.0
+proxy_annotation_top_k_enrichment,50.0,inf,0.2890173410404624,1.0,1.0,173.0

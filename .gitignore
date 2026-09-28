@@ -1,0 +1,13 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+/dist/
+build/
+*.egg-info/
+.DS_Store
+dashboard-site/.openai/
+dashboard-site/.sites-runtime/
+dashboard-site/site-deploy.tar.gz

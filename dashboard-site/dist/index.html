@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore real-data probabilistic gene-network and Mendelian-randomization evidence linking LDL biology to coronary artery disease." />
+    <meta name="theme-color" content="#17201f" />
+    <title>CoreGene Bayes — LDL to CAD</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%2317201f'/%3E%3Cpath d='M8 22 16 8l8 14M11 17h10' fill='none' stroke='%23f4f1e8' stroke-width='2.2'/%3E%3Ccircle cx='8' cy='22' r='2.3' fill='%23a94b3f'/%3E%3Ccircle cx='16' cy='8' r='2.3' fill='%23c68b2c'/%3E%3Ccircle cx='24' cy='22' r='2.3' fill='%2325677a'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace">Skip to results</a>
+    <header class="masthead">
+      <a class="project-mark" href="#workspace" aria-label="CoreGene Bayes dashboard home">
+        <svg viewBox="0 0 42 42" aria-hidden="true">
+          <path d="M8 31 21 8l13 23M13 23h16" />
+          <circle cx="8" cy="31" r="2.8" />
+          <circle cx="21" cy="8" r="2.8" />
+          <circle cx="34" cy="31" r="2.8" />
+        </svg>
+        <span><b>COREGENE–BAYES</b><small>LDL → CAD</small></span>
+      </a>
+      <nav aria-label="Dashboard sections">
+        <a href="#landscape">Genes</a>
+        <a href="#network">Network</a>
+        <a href="#locus">SORT1 locus</a>
+        <a href="#methods">Methods</a>
+      </nav>
+      <div class="release"><span></span> Real summary statistics <b><span class="release-long">Open Targets</span> 26.09</b></div>
+    </header>
+
+    <main id="workspace">
+      <section class="question-strip" aria-labelledby="page-title">
+        <div>
+          <p class="kicker">Research question · LDL biology × coronary artery disease</p>
+          <h1 id="page-title">Which genes sit at the intersection of inherited lipid risk and regulatory convergence?</h1>
+          <p class="lede">Genetically anchored candidates evaluated with whole-blood eQTL networks and CAD GWAS summary statistics.</p>
+        </div>
+        <ol class="finding-index">
+          <li><span>01</span><p><b>HP</b> leads the primary definition <em>P(core) 0.769</em></p></li>
+          <li><span>02</span><p><b>LDLR</b> leads stricter convergence tests <em>m=3 · m=5</em></p></li>
+          <li><span>03</span><p><b>SORT1 region</b> strongly shares signal <em>mediator unresolved</em></p></li>
+        </ol>
+      </section>
+
+      <section class="scope-line" aria-label="Study scope">
+        <div><strong>239</strong><span>candidate genes</span></div>
+        <div><strong>173</strong><span>CAD ratio estimates</span></div>
+        <div><strong>20,493</strong><span>directed pairs</span></div>
+        <div><strong>97</strong><span>source loci</span></div>
+        <p>Exploratory model-based evidence, conditional on observed pairs and configured priors.</p>
+      </section>
+
+      <section class="figure-panel landscape-panel" id="landscape" aria-labelledby="landscape-title">
+        <div class="figure-heading">
+          <div>
+            <p class="figure-no">FIGURE 01 / CANDIDATE LANDSCAPE</p>
+            <h2 id="landscape-title">Posterior core-gene ranking</h2>
+          </div>
+          <div class="threshold-control" role="group" aria-label="Minimum converging source loci">
+            <button class="active" data-threshold="m2" aria-pressed="true"><span>m = 2</span><small>Primary</small></button>
+            <button data-threshold="m3" aria-pressed="false"><span>m = 3</span><small>Stricter</small></button>
+            <button data-threshold="m5" aria-pressed="false"><span>m = 5</span><small>Most strict</small></button>
+          </div>
+        </div>
+
+        <div class="ranking-tools">
+          <label class="gene-search" for="gene-search">
+            <span>Find candidate</span>
+            <input id="gene-search" list="gene-options" type="search" placeholder="Gene symbol or name" autocomplete="off" />
+            <datalist id="gene-options"></datalist>
+          </label>
+          <div class="chart-key" aria-hidden="true">
+            <span><i class="dot"></i> posterior</span>
+            <span><i class="line"></i> prior/slab range</span>
+            <span><i class="tick"></i> prior-only baseline</span>
+          </div>
+        </div>
+
+        <div class="landscape-layout">
+          <div class="ranking-wrap">
+            <div id="ranking-chart" class="ranking-chart" aria-live="polite"></div>
+            <button id="ranking-expand" class="text-button" type="button">Show top 25</button>
+          </div>
+          <aside id="gene-dossier" class="gene-dossier" aria-live="polite">
+            <p class="eyebrow">Selected candidate</p>
+            <h3>LDLR</h3>
+            <p class="dossier-name">low density lipoprotein receptor</p>
+            <div class="dossier-loading">Loading evidence record…</div>
+          </aside>
+        </div>
+        <p class="figure-note"><sup>a</sup> Sensitivity whiskers span the configured prior/slab grid; they are not credible intervals. Select a gene to inspect its complete evidence record.</p>
+      </section>
+
+      <section class="figure-panel network-panel" id="network" aria-labelledby="network-title">
+        <div class="figure-heading">
+          <div>
+            <p class="figure-no">FIGURE 02 / DIRECTED INFLUENCE</p>
+            <h2 id="network-title">Sparse, model-supported network</h2>
+          </div>
+          <div class="edge-control" role="group" aria-label="Network evidence filter">
+            <button class="active" data-edge-filter="supported" aria-pressed="true">FDR ≤ .05</button>
+            <button data-edge-filter="all" aria-pressed="false">All PIP ≥ .50</button>
+            <button data-edge-filter="selected" aria-pressed="false">Selected gene</button>
+          </div>
+        </div>
+        <div class="network-layout">
+          <div class="network-canvas" tabindex="0" role="region" aria-label="Directed gene influence network; horizontally scrollable on small screens">
+            <div class="network-axis"><span>SOURCE</span><span>TARGET</span></div>
+            <p class="scroll-cue">Scroll horizontally to inspect the full network →</p>
+            <svg id="network-svg" viewBox="0 0 720 430" role="img" aria-labelledby="network-svg-title network-svg-desc">
+              <title id="network-svg-title">Model-supported directed gene influence network</title>
+              <desc id="network-svg-desc">Source genes on the left connect to target genes on the right. Line weight encodes edge inclusion probability.</desc>
+            </svg>
+          </div>
+          <div class="edge-ledger">
+            <div class="ledger-head"><span>Edge ledger</span><span id="edge-count">8 / 20,493</span></div>
+            <div class="edge-table-scroll">
+              <table>
+                <thead><tr><th>Directed influence</th><th>PIP</th><th>FDR</th><th>β</th></tr></thead>
+                <tbody id="edge-table-body"><tr><td colspan="4">Loading network evidence…</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <p class="figure-note"><sup>b</sup> These same-cohort, single-instrument estimates can reflect linkage, shared regulation, or horizontal pleiotropy. “Directed influence” does not mean a validated regulatory mechanism.</p>
+      </section>
+
+      <section class="locus-plate" id="locus" aria-labelledby="locus-title">
+        <div class="locus-copy">
+          <p class="figure-no light">FIGURE 03 / LIVER LOCUS AUDIT</p>
+          <h2 id="locus-title">Three genes share one regional signal.</h2>
+          <p>SORT1, PSRC1, and CELSR2 each strongly colocalizes with CAD around the same lead variant. The audit supports shared regional architecture—not unique mediation.</p>
+          <div class="variant-stamp"><span>TOP SHARED VARIANT</span><strong>rs12740374</strong><small>2,582 variants assessed per gene</small></div>
+        </div>
+        <div class="locus-chart" id="locus-chart" tabindex="0" role="region" aria-label="SORT1-region colocalization figure; horizontally scrollable on small screens" aria-live="polite">
+          <p class="scroll-cue">Scroll horizontally to inspect the full locus figure →</p>
+          <p>Loading liver–CAD colocalization…</p>
+        </div>
+      </section>
+
+      <section class="figure-panel uncertainty-panel" id="uncertainty" aria-labelledby="uncertainty-title">
+        <div class="figure-heading">
+          <div>
+            <p class="figure-no">FIGURE 04 / PRIOR SENSITIVITY</p>
+            <h2 id="uncertainty-title">The ranking is informative—and conditional.</h2>
+          </div>
+          <p class="heading-note">Primary result versus the complete configured prior/slab range.</p>
+        </div>
+        <div id="sensitivity-cases" class="sensitivity-cases"></div>
+        <div class="baseline-note"><span class="baseline-marker"></span><b>Prior-only P(core)</b><strong>0.0253</strong><p>for m=2 across 97 source loci</p></div>
+      </section>
+
+      <section class="methods-section" id="methods" aria-labelledby="methods-title">
+        <div class="methods-intro">
+          <p class="figure-no">ANALYTICAL RECORD / VERSION 0.1.0</p>
+          <h2 id="methods-title">From locus candidates to a core-like probability</h2>
+          <p>The pipeline preserves effect direction, keeps missing network pairs distinct from negative evidence, and collapses correlated evidence from the same physical source locus conservatively.</p>
+        </div>
+        <ol class="method-chain">
+          <li><span>01</span><b>Ascertain</b><p>LDL lead loci; L2G ≥ 0.40 plus verified seed genes.</p></li>
+          <li><span>02</span><b>Harmonize</b><p>Signed alleles; CAD effects scaled to genotype SD.</p></li>
+          <li><span>03</span><b>Estimate</b><p>Single-instrument full-delta Wald ratios.</p></li>
+          <li><span>04</span><b>Collapse</b><p>Maximum edge probability within each 1 Mb source locus.</p></li>
+          <li><span>05</span><b>Integrate</b><p>Spike–slab evidence plus exact Poisson-binomial convergence.</p></li>
+        </ol>
+
+        <div class="audit-grid">
+          <div class="attrition-block">
+            <div class="subhead"><span>Analysis funnel</span><span>count</span></div>
+            <div id="attrition-list"></div>
+          </div>
+          <aside class="boundary-block">
+            <p class="eyebrow">Interpretive boundary</p>
+            <h3>What this dashboard does not establish</h3>
+            <ul>
+              <li>Genome-wide gene→CAD colocalization was not available.</li>
+              <li>Network estimates reuse overlapping eQTLGen cohorts; unknown covariance is set to zero.</li>
+              <li>Whole blood is the discovery tissue; liver is audited only at the SORT1 region.</li>
+              <li>The universe is LDL-locus candidates, not all protein-coding genes.</li>
+            </ul>
+            <p>Use these results to prioritize follow-up experiments, not as clinical guidance or definitive causal confirmation.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="provenance-section" id="provenance" aria-labelledby="provenance-title">
+        <div class="provenance-heading">
+          <div>
+            <p class="figure-no">DATA PROVENANCE / REAL PUBLIC SUMMARY STATISTICS</p>
+            <h2 id="provenance-title">Every displayed result traces to a recorded source.</h2>
+          </div>
+          <p>Checksums, acquisition URLs, release identifiers, model settings, and the exact output manifest are retained with the analysis.</p>
+        </div>
+        <div id="source-table" class="source-table"></div>
+        <div class="downloads" aria-label="Project downloads">
+          <a href="downloads/ranked-genes.csv" download><span>CSV</span><b>Ranked genes</b><small>All candidate probabilities</small></a>
+          <a href="downloads/directed-edges.csv.gz" download><span>GZ</span><b>Directed edges</b><small>20,493 tested pairs</small></a>
+          <a href="downloads/sort1-locus-colocalization.csv" download><span>CSV</span><b>SORT1 audit</b><small>Regional colocalization</small></a>
+          <a href="downloads/methods.md" download><span>MD</span><b>Full methods</b><small>Reproducible specification</small></a>
+          <a href="downloads/source-manifest.json" download><span>JSON</span><b>Source manifest</b><small>URLs, counts, hashes</small></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>CoreGene Bayes · LDL → CAD · analysis 0.1.0</span>
+      <span>Hypothesis-generating evidence · not clinical guidance</span>
+    </footer>
+    <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

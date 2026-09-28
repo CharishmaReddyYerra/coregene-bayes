@@ -1,0 +1,117 @@
+{
+  "analysis_sources": {
+    "disease": "coronary artery disease",
+    "disease_gwas": "GCST90132314",
+    "genome_build_note": "GWAS and liver QTL coordinates are GRCh38; eQTLGen coordinates are GRCh37. Cross-source MR matching uses rsID plus signed alleles, never raw coordinate equality.",
+    "locus_qtl": "eQTL Catalogue r7 QTD000266 / GTEx v8 liver, n=208",
+    "network_qtl": "eQTLGen phase I whole blood, n up to 31,684"
+  },
+  "candidate_selection": {
+    "bayesv2g_manifest_created_at": null,
+    "bayesv2g_rank1_seeds_forced_in": true,
+    "bayesv2g_seed_gene_count": 10,
+    "bayesv2g_seed_genes_retained": 10,
+    "candidate_locus_gene_rows": 329,
+    "gwas_p_threshold": 5e-08,
+    "l2g_score_threshold": 0.4,
+    "open_targets_release": {
+      "iteration": null,
+      "month": "09",
+      "year": "26"
+    },
+    "significant_locus_count": 301,
+    "source_study": "GCST90019512",
+    "source_trait": "LDL cholesterol",
+    "total_credible_sets": 431,
+    "unique_candidate_genes": 239
+  },
+  "counts": {
+    "cad_instrument_outcomes": 3384,
+    "cad_sort1_region_rows": 6556,
+    "candidate_cis_rows_scanned": 111353,
+    "candidate_target_rows_scanned": 1867316,
+    "compact_trans_outcomes": 19781,
+    "disease_instrument_candidate_rows": 3466,
+    "liver_sort1_rows": 8631,
+    "network_source_instruments": 114,
+    "tested_trans_snps": 10317
+  },
+  "created_at_utc": "2026-09-26T03:08:03.955618+00:00",
+  "files": {
+    "cad_compaction_state.json": {
+      "bytes": 492,
+      "sha256": "31c7d81d8efce6f2bfa738cec918df324cd8be2d28c871ed653a0ccae73f7892"
+    },
+    "cad_instrument_outcomes.tsv.gz": {
+      "bytes": 215593,
+      "sha256": "4557634ecf8ee4c21b22622fb665b309cc13fcabb70844589a3850c9512ca950"
+    },
+    "cad_metadata.yaml": {
+      "bytes": 5438,
+      "sha256": "548fe3f198e5a50d98c836f3009190f4cb510c4368e192597e653e938061489f"
+    },
+    "cad_sort1_region.tsv.gz": {
+      "bytes": 420511,
+      "sha256": "18cf4d18e5fb74dc121034c6a111d878eb9c3a50108e1601531172b1edd5b763"
+    },
+    "candidate_locus_rows.csv": {
+      "bytes": 77523,
+      "sha256": "fc0435badced7ac2c250b3b156517499927578c913f79489ccf2bb066fdae89f"
+    },
+    "candidates.csv": {
+      "bytes": 56289,
+      "sha256": "c70f24bf4431c5790bfa46ffcbd58eab0880f2d28990846d8a7fdd4772629629"
+    },
+    "eqtl_compaction_state.json": {
+      "bytes": 946,
+      "sha256": "87444bcac4405753ed888097dc8283152d27e8d3bc114ce8fa34b73e6a7d8024"
+    },
+    "eqtlgen_cis_instrument_candidates.tsv.gz": {
+      "bytes": 98400,
+      "sha256": "4f788a3ec1edc351469ad3f8ed04fbc34852a23751abb6102525f956630a9a4e"
+    },
+    "eqtlgen_network_instruments.tsv.gz": {
+      "bytes": 6023,
+      "sha256": "263fc60340b36cd7aa5b2562c6698a292d7773729a8c04720d8b6005e326ed9a"
+    },
+    "eqtlgen_trans_outcomes.tsv.gz": {
+      "bytes": 478763,
+      "sha256": "6cdd6bac8df56163364b04921fb79eaddf2e1536c04fd99a030b7211c36c62f5"
+    },
+    "gtex_v8_liver_sort1_genes.tsv.gz": {
+      "bytes": 179534,
+      "sha256": "64950ec5430e13927ba2d84abda10830d7c0be7abdb8a416fb2532ab227b9495"
+    },
+    "panelapp_fh_v2_6.json": {
+      "bytes": 10400,
+      "sha256": "a299777bb8de531e08f5957db404e98ef4c98a7a7bc60ca01b77a1abea9629a6"
+    }
+  },
+  "raw_sources": {
+    "cad_gwas": {
+      "bytes": 1300497824,
+      "sha256": "89c888a717ec01ba47271527adbe6dda1c0ce7e7b88d8c1061121a7ba747954a",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90132001-GCST90133000/GCST90132314/harmonised/GCST90132314.h.tsv.gz"
+    },
+    "eqtlgen_cis": {
+      "bytes": 322775879,
+      "sha256": "8d963046d7b74cf3533c3510614cdc724e7ad0e325a3d2f7cca63ad13661b4c4",
+      "url": "https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2019-12-11-cis-eQTLsFDR0.05-ProbeLevel-CohortInfoRemoved-BonferroniAdded.txt.gz"
+    },
+    "eqtlgen_trans": {
+      "bytes": 6090297103,
+      "sha256": "372d3d3cfbfecec0c6c25658154db62338cb8ea6e516bffcf1d5efd179c32d58",
+      "url": "https://molgenis26.gcc.rug.nl/downloads/eqtlgen/trans-eqtl/2018-09-04-trans-eQTLsFDR-CohortInfoRemoved-BonferroniAdded.txt.gz"
+    }
+  },
+  "tls_verified": false,
+  "urls": {
+    "cad_gwas": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90132001-GCST90133000/GCST90132314/harmonised/GCST90132314.h.tsv.gz",
+    "cad_metadata": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90132001-GCST90133000/GCST90132314/harmonised/GCST90132314.h.tsv.gz-meta.yaml",
+    "eqtlgen_cis": "https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2019-12-11-cis-eQTLsFDR0.05-ProbeLevel-CohortInfoRemoved-BonferroniAdded.txt.gz",
+    "eqtlgen_trans": "https://molgenis26.gcc.rug.nl/downloads/eqtlgen/trans-eqtl/2018-09-04-trans-eQTLsFDR-CohortInfoRemoved-BonferroniAdded.txt.gz",
+    "gtex_liver": "https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/QTS000015/QTD000266/QTD000266.all.tsv.gz",
+    "open_targets": "https://api.platform.opentargets.org/api/v4/graphql",
+    "panelapp": "https://panelapp.genomicsengland.co.uk/api/v1/panels/772/?version=2.6"
+  }
+}

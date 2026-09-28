@@ -1,0 +1,13 @@
+{
+  "candidate_gene_count": 239,
+  "directed_pair_count": 20493,
+  "eligible_core_probability_count": 173,
+  "gene_disease_estimate_count": 173,
+  "network_source_gene_count": 114,
+  "network_target_gene_count": 182,
+  "prior_only_convergence_probability_m2": 0.25314764851508187,
+  "prior_only_core_probability_m2": 0.025314764851508187,
+  "probability_scope": "exploratory model-based evidence conditional on observed/tested pairs, candidate ascertainment, priors, and unverified instrumental-variable assumptions",
+  "source_locus_count": 97,
+  "top_gene": "HP"
+}

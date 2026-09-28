@@ -1,0 +1,323 @@
+{
+  "config": {
+    "ancestry": "predominantly European",
+    "bayesv2g_directory": "../bayesv2g/results/ldl_demo",
+    "candidate_p_threshold": 5e-08,
+    "candidate_study_id": "GCST90019512",
+    "candidate_trait": "Low-density lipoprotein cholesterol",
+    "core_thresholds": [
+      2,
+      3,
+      5
+    ],
+    "data_directory": "data/snapshots/real_ldl_cad",
+    "disease": "Coronary artery disease",
+    "disease_prior_inclusion": 0.1,
+    "disease_slab_sd": 0.2,
+    "disease_study_id": "GCST90132314",
+    "edge_prior_inclusion": 0.01,
+    "edge_slab_sd": 0.15,
+    "genome_build": "GRCh38",
+    "l2g_candidate_threshold": 0.4,
+    "locus_validation_tissue": "liver",
+    "minimum_instrument_f": 10.0,
+    "minimum_network_coverage": 0.5,
+    "open_targets_endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+    "open_targets_release": "26.09",
+    "primary_network_tissue": "whole blood",
+    "project": "CoreGene-Bayes LDL-to-CAD real-data demonstration",
+    "random_seed": 20260925,
+    "results_directory": "results/ldl_cad",
+    "source_locus_window_bp": 1000000
+  },
+  "created_at_utc": "2026-09-26T03:13:40.943061+00:00",
+  "inputs": [
+    {
+      "bytes": 1009,
+      "path": "config/ldl_cad.json",
+      "sha256": "7c0baf2dde5f077830495d011003d2d9d5c84f85e9462e8ffaab47e5adec59df"
+    },
+    {
+      "bytes": 215593,
+      "path": "data/snapshots/real_ldl_cad/cad_instrument_outcomes.tsv.gz",
+      "sha256": "4557634ecf8ee4c21b22622fb665b309cc13fcabb70844589a3850c9512ca950"
+    },
+    {
+      "bytes": 5438,
+      "path": "data/snapshots/real_ldl_cad/cad_metadata.yaml",
+      "sha256": "548fe3f198e5a50d98c836f3009190f4cb510c4368e192597e653e938061489f"
+    },
+    {
+      "bytes": 420511,
+      "path": "data/snapshots/real_ldl_cad/cad_sort1_region.tsv.gz",
+      "sha256": "18cf4d18e5fb74dc121034c6a111d878eb9c3a50108e1601531172b1edd5b763"
+    },
+    {
+      "bytes": 77523,
+      "path": "data/snapshots/real_ldl_cad/candidate_locus_rows.csv",
+      "sha256": "fc0435badced7ac2c250b3b156517499927578c913f79489ccf2bb066fdae89f"
+    },
+    {
+      "bytes": 56289,
+      "path": "data/snapshots/real_ldl_cad/candidates.csv",
+      "sha256": "c70f24bf4431c5790bfa46ffcbd58eab0880f2d28990846d8a7fdd4772629629"
+    },
+    {
+      "bytes": 98400,
+      "path": "data/snapshots/real_ldl_cad/eqtlgen_cis_instrument_candidates.tsv.gz",
+      "sha256": "4f788a3ec1edc351469ad3f8ed04fbc34852a23751abb6102525f956630a9a4e"
+    },
+    {
+      "bytes": 6023,
+      "path": "data/snapshots/real_ldl_cad/eqtlgen_network_instruments.tsv.gz",
+      "sha256": "263fc60340b36cd7aa5b2562c6698a292d7773729a8c04720d8b6005e326ed9a"
+    },
+    {
+      "bytes": 478763,
+      "path": "data/snapshots/real_ldl_cad/eqtlgen_trans_outcomes.tsv.gz",
+      "sha256": "6cdd6bac8df56163364b04921fb79eaddf2e1536c04fd99a030b7211c36c62f5"
+    },
+    {
+      "bytes": 179534,
+      "path": "data/snapshots/real_ldl_cad/gtex_v8_liver_sort1_genes.tsv.gz",
+      "sha256": "64950ec5430e13927ba2d84abda10830d7c0be7abdb8a416fb2532ab227b9495"
+    },
+    {
+      "bytes": 10400,
+      "path": "data/snapshots/real_ldl_cad/panelapp_fh_v2_6.json",
+      "sha256": "a299777bb8de531e08f5957db404e98ef4c98a7a7bc60ca01b77a1abea9629a6"
+    },
+    {
+      "bytes": 5048,
+      "path": "data/snapshots/real_ldl_cad/source_manifest.json",
+      "sha256": "96b5ab45c8f3df7d765e8726221be69bb5985e7228b57c01b3df14024d001668"
+    },
+    {
+      "bytes": 822,
+      "path": "pyproject.toml",
+      "sha256": "7bbdef3b2bba1d0309976a4dda9d86e4a806ad8a7975310242963228e0d348ee"
+    },
+    {
+      "bytes": 392,
+      "path": "requirements.lock",
+      "sha256": "7d15a521b032ebc61b86a517c80b468b883c1e6ce413c7e801ef98c30c9c44ae"
+    },
+    {
+      "bytes": 102,
+      "path": "src/coregene_bayes/__init__.py",
+      "sha256": "271acb24f0711125da7cd47a0c69b1003fcd61f3371050b8204d6d5ca03b75e6"
+    },
+    {
+      "bytes": 77,
+      "path": "src/coregene_bayes/__main__.py",
+      "sha256": "a2fad37430ca6458264ac9c31df5654a3bde814b724175f4486578977f033c79"
+    },
+    {
+      "bytes": 2805,
+      "path": "src/coregene_bayes/bayesv2g_adapter.py",
+      "sha256": "96cf03d0e061c506d30dd978919fb16acad51593ccfa9a75c04b0b934c7e084a"
+    },
+    {
+      "bytes": 2446,
+      "path": "src/coregene_bayes/cli.py",
+      "sha256": "85686e7e887fb66fa3d9f198b244327f55f053a06e12875a9d0ff0e08b8328a0"
+    },
+    {
+      "bytes": 3242,
+      "path": "src/coregene_bayes/coloc.py",
+      "sha256": "ca2175626ad05a12a2136497e309c795d34e0acd2448cbc76873fdee826ad14f"
+    },
+    {
+      "bytes": 2959,
+      "path": "src/coregene_bayes/config.py",
+      "sha256": "ed4f605626b453426845d519a6699061b6bd6fcf6e7e57c018748e381db09241"
+    },
+    {
+      "bytes": 24059,
+      "path": "src/coregene_bayes/data_sources.py",
+      "sha256": "a83b53dac25c7af5ee00655e202492ec0b56c4b445ad5a31bfad4094bedaa6e9"
+    },
+    {
+      "bytes": 4404,
+      "path": "src/coregene_bayes/evaluation.py",
+      "sha256": "849b6a3b1f57e56961aed5fd103bfd01d6b3a561f216291b7ad095ee11a938c3"
+    },
+    {
+      "bytes": 6440,
+      "path": "src/coregene_bayes/locus.py",
+      "sha256": "fea633fff533d75acef034901c43e6fc095963de84505d711dbd57d985e59b4e"
+    },
+    {
+      "bytes": 17624,
+      "path": "src/coregene_bayes/model.py",
+      "sha256": "e11bd57b8b1cfbf85b54939e219c61637e4639ccd3dbcb575a8812b202b65917"
+    },
+    {
+      "bytes": 27998,
+      "path": "src/coregene_bayes/mr.py",
+      "sha256": "4611e3fadba3356a34e59d90b1b4335a7700fe018583988a4d3ce15f99445c1f"
+    },
+    {
+      "bytes": 3967,
+      "path": "src/coregene_bayes/network.py",
+      "sha256": "a0bb1a03478b068fda6cd7bd5ba108a8be17198363392e2c194ae666f35d67a2"
+    },
+    {
+      "bytes": 32025,
+      "path": "src/coregene_bayes/pipeline.py",
+      "sha256": "d71f2f87ef1ad33714cd8cd6002caaef5f70a886036dc68501a8160c9dfa179d"
+    },
+    {
+      "bytes": 2245,
+      "path": "src/coregene_bayes/provenance.py",
+      "sha256": "33c3dd697c300eb2521ce37a39c610656ca560ce73a90a798efbe6a3cf40284c"
+    },
+    {
+      "bytes": 17690,
+      "path": "src/coregene_bayes/reporting.py",
+      "sha256": "195640cf00cb0384abe4a1d024fa7cc34ec0a3174062580d33444a4e9bdad6d2"
+    }
+  ],
+  "notes": {
+    "source_counts": {
+      "cad_instrument_outcomes": 3384,
+      "cad_sort1_region_rows": 6556,
+      "candidate_cis_rows_scanned": 111353,
+      "candidate_target_rows_scanned": 1867316,
+      "compact_trans_outcomes": 19781,
+      "disease_instrument_candidate_rows": 3466,
+      "liver_sort1_rows": 8631,
+      "network_source_instruments": 114,
+      "tested_trans_snps": 10317
+    },
+    "source_snapshot_created_at": "2026-09-26T03:08:03.955618+00:00",
+    "summary": {
+      "candidate_gene_count": 239,
+      "directed_pair_count": 20493,
+      "eligible_core_probability_count": 173,
+      "gene_disease_estimate_count": 173,
+      "network_source_gene_count": 114,
+      "network_target_gene_count": 182,
+      "prior_only_convergence_probability_m2": 0.25314764851508187,
+      "prior_only_core_probability_m2": 0.025314764851508187,
+      "probability_scope": "exploratory model-based evidence conditional on observed/tested pairs, candidate ascertainment, priors, and unverified instrumental-variable assumptions",
+      "source_locus_count": 97,
+      "top_gene": "HP"
+    }
+  },
+  "outputs": [
+    {
+      "bytes": 658,
+      "path": "results/ldl_cad/analysis_attrition.csv",
+      "sha256": "03fa8f2b6f557a2e27efc9b21b711e70861a95c13b3b5fe5ac53e7b35ef1be60"
+    },
+    {
+      "bytes": 56025,
+      "path": "results/ldl_cad/candidate_genes.csv",
+      "sha256": "4f6d381e36a12f8482650ab9272e826271125eb817078dbc55a6e0683b62f1c5"
+    },
+    {
+      "bytes": 73128,
+      "path": "results/ldl_cad/core_gene_posteriors.csv",
+      "sha256": "7454abb6d8598977d3cef16714095a1c288aa6dc8d083ef23447adc1d95aee34"
+    },
+    {
+      "bytes": 106904,
+      "path": "results/ldl_cad/figures/convergence.png",
+      "sha256": "73e16a0769c6e149940dbebdb6b9ca0b7a08a20e815fe6a9081ea1ba4a673d43"
+    },
+    {
+      "bytes": 80342,
+      "path": "results/ldl_cad/figures/core_rankings.png",
+      "sha256": "fac84bc898062e211d60ccdb88ff2c9b3db832248e936ba4f8b40b410f9386da"
+    },
+    {
+      "bytes": 155587,
+      "path": "results/ldl_cad/figures/directed_network.png",
+      "sha256": "e9d974cdf840fcca39caaaae0f58452b03a8f8bd144d62bef52abae7699ca38d"
+    },
+    {
+      "bytes": 28239,
+      "path": "results/ldl_cad/figures/sort1_coloc.png",
+      "sha256": "5529aac254cc865e359f5242d554af9a2f1888196ae3514312faa37cfb7afa2c"
+    },
+    {
+      "bytes": 110828,
+      "path": "results/ldl_cad/gene_disease_mr.csv",
+      "sha256": "7a8ec0f4e87b589112cad47d35a6a659733845961bfafb2dc3cfc383c45abea0"
+    },
+    {
+      "bytes": 41505,
+      "path": "results/ldl_cad/gene_features.csv",
+      "sha256": "086a9c3a7324fbbf33ad6ecbc9e52d89e08ec1f4a4f9f0e11ba747f8d112d126"
+    },
+    {
+      "bytes": 1894881,
+      "path": "results/ldl_cad/gene_gene_edges.csv.gz",
+      "sha256": "2d8b922c653979710d1248fbecb50ef04cabf1a8336e11856f0ca11ac41f199a"
+    },
+    {
+      "bytes": 34745,
+      "path": "results/ldl_cad/harmonization_audit.csv.gz",
+      "sha256": "f5b3901efbe72d102a85fabd1a1d72b883ce3bd393fd969c81b575f956fef3f4"
+    },
+    {
+      "bytes": 1373104,
+      "path": "results/ldl_cad/locus_collapsed_edges.csv",
+      "sha256": "78f65fa5b3ea30450ab7215827ed5e0de28c1ebba183471d74d60f5a08a279ef"
+    },
+    {
+      "bytes": 919,
+      "path": "results/ldl_cad/model.json",
+      "sha256": "2ca06933fd6b423a98398141f18416c6e5403e1f1262a26a7794574e3887b712"
+    },
+    {
+      "bytes": 8333,
+      "path": "results/ldl_cad/network_coverage.csv",
+      "sha256": "326f54c40222cfb02aefa3693c547e3bb146d06317cb78363bdb38e328be659a"
+    },
+    {
+      "bytes": 660480,
+      "path": "results/ldl_cad/prior_sensitivity.csv.gz",
+      "sha256": "55cbbe15d801ecc43cd3aa020d212e7e21eb3d5de54f55d7925e059b35b6c8e7"
+    },
+    {
+      "bytes": 32155,
+      "path": "results/ldl_cad/report.html",
+      "sha256": "a08b82b864906e045c65c5d2ebd98443674727c15ff5be08f1dfbf1dcb946ea0"
+    },
+    {
+      "bytes": 567,
+      "path": "results/ldl_cad/run_summary.json",
+      "sha256": "2e5d71a8a51b9e3a248e1162783393acd55fc04522391eb6dac46a0d1f689de0"
+    },
+    {
+      "bytes": 1712,
+      "path": "results/ldl_cad/sort1_liver_cad_colocalization.csv",
+      "sha256": "ef6caf82590a8bb3ec92f12891746dc15ca2e42996366343de705ee29d2fe7fc"
+    },
+    {
+      "bytes": 269191,
+      "path": "results/ldl_cad/sort1_liver_cad_shared_variants.csv.gz",
+      "sha256": "048bccf5d88f9e1218de6d54519560b861bb8fd22732a5bd5482920546e00383"
+    },
+    {
+      "bytes": 496,
+      "path": "results/ldl_cad/validation_metrics.csv",
+      "sha256": "cae22881b07dfc0482a6f1b2c5b96ecb510fdd45faa09ff26553073298749b60"
+    },
+    {
+      "bytes": 787,
+      "path": "results/ldl_cad/validation_panelapp_genes.csv",
+      "sha256": "88a2801eceb02950e9164af001a3bd372c7a3f51d8fedec4f5a13fe242ddf877"
+    }
+  ],
+  "project": "CoreGene-Bayes LDL-to-CAD real-data demonstration",
+  "runtime": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "platform": "macOS-15.1-arm64-arm-64bit",
+    "python": "3.12.6",
+    "scipy": "1.18.1"
+  }
+}
